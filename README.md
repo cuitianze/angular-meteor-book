@@ -12,7 +12,6 @@
     - [Meteor 客户端 - 通过Bower安装](#meteor-%E5%AE%A2%E6%88%B7%E7%AB%AF---%E9%80%9A%E8%BF%87bower%E5%AE%89%E8%A3%85)
   - [Resources](#resources)
   - [用法](#%E7%94%A8%E6%B3%95)
-    - [内容目录](#%E5%86%85%E5%AE%B9%E7%9B%AE%E5%BD%95)
     - [应用初始化](#%E5%BA%94%E7%94%A8%E5%88%9D%E5%A7%8B%E5%8C%96)
     - [模板化](#%E6%A8%A1%E6%9D%BF%E5%8C%96)
 - [Hello {{yourName}}!](#hello-yourname)
