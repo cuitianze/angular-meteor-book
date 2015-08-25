@@ -1,0 +1,20 @@
+{
+  "name": "angular-meteor-book",
+  "version": "1.0.0",
+  "description": "Angular-Meteor-学习笔记",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuitianze/angular-meteor-book.git"
+  },
+  "keywords": [
+    "angular",
+    "meteor"
+  ],
+  "author": "cuitianze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cuitianze/angular-meteor-book/issues"
+  },
+  "homepage": "https://github.com/cuitianze/angular-meteor-book#readme",
+  "devDependencies": {}
+}
