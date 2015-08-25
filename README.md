@@ -39,7 +39,10 @@
 1. 安装 [meteor-客户端](https://github.com/idanwe/meteor-client-side) `$ bower install meteor-client-side`
 2. 安装 angular-meteor `$ bower install angular-meteor`
 
-## Resources
+## 学习笔记
+- [Meteor官网学习教程改进版-让我们来做一个简历系统吧](note/meteor_resume.md)
+
+## 学习资源
 - [Getting started tutorial](https://angular-meteor.com/tutorial)
 - [Example application](https://github.com/Urigo/meteor-angular-socially) (Final version of the tutorial)
 - [angular-meteor University](https://github.com/Urigo/meteor-angular-socially#angular-meteor-university-)
