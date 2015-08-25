@@ -1,7 +1,7 @@
 <img src="http://angular-meteor.com/images/logo-large.png" width="60" height="60" />  [angular-meteor-学习笔记]()
 ======================================================
 
-> The power of Meteor and the simplicity and eco-system of AngularJS
+> (熊掌与鱼翅兼得之) The power of Meteor and the simplicity and eco-system of AngularJS
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
