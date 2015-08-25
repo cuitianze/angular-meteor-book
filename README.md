@@ -56,14 +56,6 @@
 - [Awesome Meteor](https://github.com/Urigo/awesome-meteor) - A curated, community driven list of awesome Meteor packages, libraries, resources and shiny thing
 
 ## 用法
-### 内容目录
-- [应用初始化](#app-initialization)
-- [模板化](#templating)
-- [Meteor集合的数据绑定](#binding-to-meteor-collections)
-- [路由](#routing)
-- [用户鉴定](#user)
-- [Meteor promises方法](#meteor-methods-with-promises)
-- [绑定Meteor session](#bind-meteor-session)
 
 ### 应用初始化
 
