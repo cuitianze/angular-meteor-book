@@ -7,44 +7,38 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [<a href="http://angular-meteor.com/"><img src="http://angular-meteor.com/images/logo-large.png" width="60" height="60" /></a>  [angular-meteor](http://angular-meteor.com/tutorial) [![Build Status](https://travis-ci.org/Urigo/angular-meteor.svg?branch=master)](https://travis-ci.org/Urigo/angular-meteor) [![Bower version](https://badge.fury.io/bo/angular-meteor.svg)](http://badge.fury.io/bo/angular-meteor)](#a-hrefhttpangular-meteorcomimg-srchttpangular-meteorcomimageslogo-largepng-width60-height60-a--angular-meteorhttpangular-meteorcomtutorial-build-statushttpstravis-ciorgurigoangular-meteorsvgbranchmasterhttpstravis-ciorgurigoangular-meteor-bower-versionhttpsbadgefuryioboangular-meteorsvghttpbadgefuryioboangular-meteor)
-  - [Quick start](#quick-start)
-    - [Meteor Project](#meteor-project)
-    - [Meteor client side - with Bower](#meteor-client-side---with-bower)
+  - [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
+    - [Meteor 项目](#meteor-%E9%A1%B9%E7%9B%AE)
+    - [Meteor 客户端 - 通过Bower安装](#meteor-%E5%AE%A2%E6%88%B7%E7%AB%AF---%E9%80%9A%E8%BF%87bower%E5%AE%89%E8%A3%85)
   - [Resources](#resources)
-  - [Contributing](#contributing)
-  - [Contributor Developer Setup](#contributor-developer-setup)
-    - [Run local urigo:angular in your project](#run-local-urigoangular-in-your-project)
-    - [Running tests](#running-tests)
-    - [Contributing to documentation and tutorials.](#contributing-to-documentation-and-tutorials)
-  - [Usage](#usage)
-    - [Table of Contents](#table-of-contents)
-    - [App initialization](#app-initialization)
-    - [Templating](#templating)
-    - [Binding to Meteor Collections](#binding-to-meteor-collections)
-    - [Subscribe](#subscribe)
-    - [Routing](#routing)
+  - [用法](#%E7%94%A8%E6%B3%95)
+    - [内容目录](#%E5%86%85%E5%AE%B9%E7%9B%AE%E5%BD%95)
+    - [应用初始化](#%E5%BA%94%E7%94%A8%E5%88%9D%E5%A7%8B%E5%8C%96)
+    - [模板化](#%E6%A8%A1%E6%9D%BF%E5%8C%96)
+- [Hello {{yourName}}!](#hello-yourname)
+    - [Meteor Collections（集合）数据绑定](#meteor-collections%EF%BC%88%E9%9B%86%E5%90%88%EF%BC%89%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A)
+    - [订阅数据Subscribe](#%E8%AE%A2%E9%98%85%E6%95%B0%E6%8D%AEsubscribe)
+    - [路由](#%E8%B7%AF%E7%94%B1)
     - [&lt;meteor-include&gt;](#&ltmeteor-include&gt)
-    - [User Authentication](#user-authentication)
-    - [Meteor methods with promises](#meteor-methods-with-promises)
-    - [Bind Meteor session](#bind-meteor-session)
-    - [Additional packages](#additional-packages)
-    - [Acknowledgement](#acknowledgement)
+    - [用户鉴定](#%E7%94%A8%E6%88%B7%E9%89%B4%E5%AE%9A)
+    - [Meteor 的 promises方法](#meteor-%E7%9A%84-promises%E6%96%B9%E6%B3%95)
+    - [绑定 Meteor session](#%E7%BB%91%E5%AE%9A-meteor-session)
+    - [额外的 packages](#%E9%A2%9D%E5%A4%96%E7%9A%84-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Quick start
+## 快速开始
 
-### Meteor Project
-1. Install [Meteor](http://docs.meteor.com/#quickstart) `$ curl https://install.meteor.com | /bin/sh`
-2. Create a new meteor app using `$ meteor create myapp` or navigate to the root of your existing app
-3. Install urigo:angular `$ meteor add urigo:angular`
+### Meteor 项目
+1. 通过 `$ curl https://install.meteor.com | /bin/sh` 安装 [Meteor](http://docs.meteor.com/#quickstart) 
+2. 通过 `$ meteor create myapp` 创建一个新的Meteor应用， 或者cd 到已存在应用的根目录
+3. 通过 `$ meteor add urigo:angular` 安装 urigo:angular
 
-### Meteor client side - with Bower
-> Use Meteor as a service in your existing non Meteor angular application
+### Meteor 客户端 - 通过Bower安装
+> 在非Meteor的angular应用中使用Meteor作为一个service
 
-1. Install [meteor-client-side](https://github.com/idanwe/meteor-client-side) `$ bower install meteor-client-side`
-2. Install angular-meteor `$ bower install angular-meteor`
+1. 安装 [meteor-客户端](https://github.com/idanwe/meteor-client-side) `$ bower install meteor-client-side`
+2. 安装 angular-meteor `$ bower install angular-meteor`
 
 ## Resources
 - [Getting started tutorial](https://angular-meteor.com/tutorial)
@@ -61,89 +55,32 @@
 - [Angular-Meteor Platform](https://github.com/planet-training/angular-meteor-platform) - No Blaze, plain HTML
 - [Awesome Meteor](https://github.com/Urigo/awesome-meteor) - A curated, community driven list of awesome Meteor packages, libraries, resources and shiny thing
 
-## Contributing
-We would love contributions in:
+## 用法
+### 内容目录
+- [应用初始化](#app-initialization)
+- [模板化](#templating)
+- [Meteor集合的数据绑定](#binding-to-meteor-collections)
+- [路由](#routing)
+- [用户鉴定](#user)
+- [Meteor promises方法](#meteor-methods-with-promises)
+- [绑定Meteor session](#bind-meteor-session)
 
-1. Code
-2. [Tutorial](http://angular-meteor.com/tutorial) - our goal with the tutorial is to add as many common tasks as possible. If you want to create and add your own chapter we would be happy to help you writing and adding it.
-3. [Roadmap](https://trello.com/b/Wj9U0ulk/angular-meteor) - you can add a card about what you want to see in the library or in the tutorial.
-4. I ([Urigo](https://github.com/urigo)) live around the world with one small bag, so another way of contributing can be by offering me a place to sleep somewhere interesting around the world that I have to see :) 
+### 应用初始化
 
-If you want to contribute and need help or don't know what should you do, you can [contact me directly](https://github.com/urigo)
-
-## Contributor Developer Setup
-
-### Run local urigo:angular in your project
-
-Create your Meteor Project
-
-```bash
-meteor create myProject
-cd myProject
-```
-
-Fork angular-meteor and clone the angular-meteor library to another directory named `urigo:angular`
-```
-mkdir urigo:angular
-git clone https://github.com/[your_username]/angular-meteor.git urigo:angular
-```
-
-Create a `packages` directory under your project's root folder and link your forked repo
-
-```bash
-cd myProject
-mkdir packages
-cd packages
-ln -s ~/path_to_your_repos/urigo\:angular
-```
-
-Now you can start using your own copy of the `angular-meteor` project from `myProject`.
-
-### Running tests
-
-In the command line
-```
-. run_tests.sh
-```
-
-Then go to `localhost:3000` in your browser
-
-### Contributing to documentation and tutorials.
-
-Whether it's a typo, some clarification, or a whole new feature - here's how to get started:
-
-1. Follow the steps to get started as a developer for angular-meteor.
-2. Change into the .docs directory and then angular-meteor `cd .docs/angular-meteor`
-3. Run the app for the documentation `meteor`
-4. Start tweaking and updating!
-
-
-## Usage
-### Table of Contents
-- [App initialization](#app-initialization)
-- [Templating[#templating]
-- [Binding to Meteor Collections](#binding-to-meteor-collections)
-- [Routing](#routing)
-- [User service](#user)
-- [Meteor methods with promises](#meteor-methods-with-promises)
-- [Bind Meteor session](#bind-meteor-session)
-
-### App initialization
-
-Register `angular-meteor` as a module in our application:
+在应用中注册 `angular-meteor` 模块：
 
 ```js
 angular
   .module('myModule', ['angular-meteor']);
 ```
 
-[More in step 0 in the tutorial](http://angular-meteor.com/tutorial/step_00)
+### 模板化
 
-### Templating
+你必须在`.ng.html`文件中写Angular模板标签，因为Meteor不会将这些文件当成Spacebars模板(注：Meteor自带的Blaze)
+将HTML和`.ng.html`文件组合在一起很容易，我们可以使用Angular的`ng-include`指令
 
-You need to write your Angular template markup in `.ng.html` files, since Meteor won't look at those files as Spacebars templates. Tying HTML and `.ng.html` files together isn't very difficult, we can simply use Angular's `ng-include`.
-
-Please note that the names of the templates to Angular will be their URL as Meteor sees it when minifying the '.ng.html' files. **Hence every template URL is relative to the root of the Meteor project, and contains no leading forward slash.** This is important to note when working with `ng-include` to include templates.
+请注意这些Angular模板的名字将是他们在Meteor中的URL。
+**因此每一个模板URL是相对路径（相对于Meteor项目的根目录），包含正斜线。**当使用`ng-include`来包含模板的时候要特别注意。
 
 `client/index.html`:
 
@@ -169,23 +106,21 @@ Please note that the names of the templates to Angular will be their URL as Mete
 </div>
 ```
 
-[More in step 0 of the tutorial](http://angular-meteor.com/tutorial/step_00)
 
-### Binding to Meteor Collections
+### Meteor Collections（集合）数据绑定
 
-[angular-meteor](http://angular-meteor.com/) provides 3-way data binding (view-client-server) by tying a Meteor collection to an Angular model. The API to accomplish this is [$meteor.collection](http://angular-meteor.com/api/meteorCollection).
+[angular-meteor](http://angular-meteor.com/) 提供了 (view-client-server) 三方 数据绑定 ， 将 Meteor collection 赋值给 Angular model.
+具体查看 API [$meteor.collection](http://angular-meteor.com/api/meteorCollection).
 
 ```js
 $scope.todos = $meteor.collection(Todos);
 ```
 
-[More in step 3 of the tutorial](http://angular-meteor.com/tutorial/step_03)
+### 订阅数据Subscribe
 
-### Subscribe
+[$meteor.subscribe](http://angular-meteor.com/api/subscribe) 是 `Meteor.subscribe`（返回promise）的封装。
 
-[$meteor.subscribe](http://angular-meteor.com/api/subscribe) is a wrapper for `Meteor.subscribe` that returns a promise.
-
-Here's an example of how to tie a Meteor collection to a clean Angular model in the form of an array:
+这是一个绑定Meteor collection到表单中Angular model的例子：
 
 ```js
 $meteor.subscribe('Todos').then(function () {
@@ -193,17 +128,14 @@ $meteor.subscribe('Todos').then(function () {
 });
 ```
 
-[More in step 9 of the tutorial](http://angular-meteor.com/tutorial/step_09)
+### 路由
 
-### Routing
-
-Use to official AngularUI ui-router Meteor package - [angularui:angular-ui-router](https://atmospherejs.com/angularui/angular-ui-router)
-
-More on how to actually use angular-ui-router in [step 5 of the tutorial](http://angular-meteor.com/tutorial/step_05)
+使用官方 AngularUI ui-router Meteor package - [angularui:angular-ui-router](https://atmospherejs.com/angularui/angular-ui-router)
 
 ### &lt;meteor-include&gt;
 
-You can include Meteor's native templates with the [meteor-include](http://angular-meteor.com/api/meteor-include) directive.
+你可以通过[meteor-include](http://angular-meteor.com/api/meteor-include) 指令来引入Meteor的原生模板.
+
 
 ```html
 <template name="todoList">
@@ -215,13 +147,13 @@ You can include Meteor's native templates with the [meteor-include](http://angul
 
 Read more on meteor-include, using parameters and binding Meteor templates to Angular's scope in the [API docs](http://angular-meteor.com/api/meteor-include).
 
-### User Authentication
+### 用户鉴定
 
-angular-meteor provides complete support for the [Meteor accounts system](http://docs.meteor.com/#/full/accounts_api). more details here -  [Documentation](http://angular-meteor.com/api/user).
+angular-meteor 提供了对 [Meteor accounts system](http://docs.meteor.com/#/full/accounts_api)的完全支持。 查看API -  [Documentation](http://angular-meteor.com/api/user).
 
 [More in step 8 of the tutorial](http://angular-meteor.com/tutorial/step_08)
 
-### Meteor methods with promises
+### Meteor 的 promises方法
 
 [$meteor.call](http://angular-meteor.com/api/methods) calls a [Meteor method](http://docs.meteor.com/#/full/meteor_methods) and returns a promise.
 
@@ -231,27 +163,19 @@ $meteor.call('addUser', username).then(function (data) {
 });
 ```
 
-[More in step 14 of the tutorial](http://angular-meteor.com/tutorial/step_14)
+### 绑定 Meteor session
 
-### Bind Meteor session
-
-[$meteor.session](http://angular-meteor.com/api/session) binds a scope variable to a Meteor Session variable.
+[$meteor.session](http://angular-meteor.com/api/session) 绑定Angular 作用域上的变量到Meteor Session的变量。
 
 ```js
 $meteor.session('counter').bind($scope, 'counter');
 ```
 
-### Additional packages
-The following is a non-exhaustive list of Meteor packages common Angular libraries:
+### 额外的 packages
+如下是Meteor包中Angular库的不完全列表：
 
 - [Meteor packages for Angular 3rd party libraries](https://trello.com/c/EGCdgHAk/47-official-meteor-packages-to)
 - [civilframe:angular-jade](https://github.com/civilframe/meteor-angular-jade) enables the usage of JADE files in place of HTML files. Files ending in *.ng.jade and will be compiled to *.html.
 - [pbastowski:angular-babel](https://github.com/pbastowski/angular-meteor-babel/) empowers angular-meteor with Babel and ng-annotate all in the one package. Files ending in .es6 will first be transpiled by Babel and then annotated with ng-annotate.
 
-Feel free to make more Angular packages and add them to that list as well.
-
-### Acknowledgement
-
-This project started as [ngMeteor](https://github.com/loneleeandroo/ngMeteor), a pre-0.9 meteorite package. Since then a lot has changed but that was the main base.
-
-Also, a lot of features were inspired by @superchris's [angular-meteor fork of ngMeteor](https://github.com/superchris/angular-meteor)
+尽情创造更多的Angular包，并添加到此列表中。
